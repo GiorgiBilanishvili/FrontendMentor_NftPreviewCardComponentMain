@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./src/output.css" />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+  </head>
+  <body class="bg-[#15263F] flex justify-center pt-10">
+    <section
+      id="Main_Section"
+      class="bg-blue-950 w-86 rounded-[20px] min-h-96 pt-5 pl-4 pb-20 md:mt-5 lg:mt-10"
+    >
+      <div class="relative w-78 h-80 group cursor-pointer">
+        <img
+          class="w-full h-full rounded-[10px]"
+          src="images/image-equilibrium.jpg"
+          alt="img"
+        />
+
+        <div
+          class="absolute inset-0 bg-cyan-400/50 rounded-[10px] opacity-0 group-hover:opacity-100 transition duration-300 flex justify-center items-center"
+        >
+          <img src="images/icon-view.svg" alt="view" />
+        </div>
+      </div>
+      <h1
+        class="text-amber-50 mt-5 text-2xl font-semibold cursor-pointer hover:text-cyan-400"
+      >
+        Equilibrium#3429
+      </h1>
+      <h2 class="text-gray-400 mt-5 text-[1.2rem]">
+        Our Equilibrium collection promotes balance and calm.
+      </h2>
+      <h3 class="flex gap-20 mt-5">
+        <span class="flex gap-2"
+          ><img src="images/icon-ethereum.svg" alt="img" />
+          <span class="text-cyan-400 flex items-center font-semibold"
+            >0,041 <nobr></nobr> ETH</span
+          ></span
+        ><span class="flex items-center gap-2"
+          ><img src="images/icon-clock.svg" alt="img" /><span
+            class="text-gray-400"
+            >3 days <nobr></nobr> left</span
+          ></span
+        >
+      </h3>
+      <hr class="text-gray-500 mt-10 w-78" />
+      <div id="Jules_Wivern" class="flex items-center mt-10 gap-5">
+        <img
+          class="w-10 h-10 border-2 border-white rounded-full"
+          src="images/image-avatar.png"
+          alt="img"
+        />
+        <p class="flex gap-5 text-amber-50 hover:text-cyan-400 cursor-pointer">
+          <span class="text-gray-400">Creation of</span>Jules Wyvern
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
